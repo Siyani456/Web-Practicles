@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form1</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function validate(){
+			if(document.form1.myname.value.length<1){
+
+				alert("Please enter your name");
+			}
+			if(document.form1.address.value.length<1){
+				alert("Please enter your address");
+			}
+		}
+	</script>
+		
+		<form name="form1" onSubmit="validate();">
+		<table>
+		   <tr>
+		      <td>Name</td>
+		      <td><input type="text" name="myname"></td>
+
+		   </tr>
+		   <tr>
+		      <td>Address</td>
+		      <td><input type="text" name="address"></td>
+		   </tr>
+		   <tr>
+		      <td><input type="submit" value="validate"></td>
+		</table>
+		</form>
+
+
+</body>
+</html>
