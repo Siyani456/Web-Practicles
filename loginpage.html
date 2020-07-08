@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form1</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function loginpage(){
+			if(document.form2.myname.value.length<1){
+
+				alert("Please enter your name");
+			}
+			if(document.form2.pass.value.length<1){
+				alert("Please enter your password");
+			}
+			if(document.form2.myname.value.length<1 && document.form2.pass.value.length<1){
+				alert("Thanks for login");
+			}
+
+		}
+	</script>
+		
+		<form name="form2" action="http://nsbm.ac.lk">
+		<table>
+		   <tr>
+		      <td>UserName</td>
+		      <td><input type="text" name="myname"></td>
+
+		   </tr>
+		   <tr>
+		      <td>Password</td>
+		      <td><input type="text" name="pass"></td>
+		   </tr>
+		   <tr>
+		      <td><input type="submit" value="Login"></td>
+		</table>
+		</form>
+
+
+</body>
+</html>
