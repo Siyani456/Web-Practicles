@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application</title>
+</head>
+<body>
+   <form name="employment" action="send.php" method="post">
+	<table border="1" width="50%" cellspacing="2" cellpadding="2">
+		<tr>
+			<td>Employment Application</td>
+			
+		</tr>
+		<tr>
+			<td>First Name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Position</td>
+			<td>
+				<select name="Position">
+					<option value="Ac">Accountant</option>
+					<option value="RE">Reception</option>
+					<option value="AD">Administrator</option>
+					<option value="SU">Supervisor</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Experince Level</td>
+			<td>
+				<select name="Experince">
+					<option>Entry Level</option>
+					<option>Some Experince</option>
+					<option>Very Experinced</option>
+					
+				</select>
+				
+			</td>
+		</tr>
+		<tr>
+			<td>Job type</td>
+			<td>
+				<input type="checkbox" name="ft" />Full-Time
+				<input type="checkbox" name="pt" />Part-Time
+				<input type="checkbox" name="cn" />Contract
+			</td>
+		</tr>
+		<tr>
+			<td>Employeement Status</td>
+			<td>
+				<input type="radio" name="estatus" value="employed" />Employed
+				<input type="radio" name="estatus" value="unemployed" />unemployed
+				<input type="radio" name="estatus" value="student" />Student
+  		</tr>
+		<tr>
+			<td>Additional Comments</td>
+			<td>
+				<textarea name="comments" cols="45" rows="5"></textarea>
+			</td>
+		</tr>
+
+
+	</table>
+   </form>
+</body>
+</html>
