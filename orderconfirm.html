@@ -4,6 +4,23 @@
 	<title>order confirmation</title>
 </head>
 <body>
+		<script type="text/javascript">
+		function validateform()
+		{
+			if(document.form3)
+
+
+
+				if (document.form3.pay.selectedlndex==0) {
+					alert("Please select a payment method");
+					return;
+				}
+				if(!document.form3.cond.checked){
+					
+				}
+		}
+	</script>
+	
   <form name="form3">
   	     <h1>Colombo West Accessories Ltd</h1>
   	     <h2><u>Order Confirmation</u></h2>
@@ -16,9 +33,44 @@
   	   	</tr>
 
   	   	<tr>
-  	   		<td>Purchase order no: </td>
+  	   		<td>Purchase Order No: </td>
   	   		<td><input type="text" name="purchase"></td>
   	   	</tr>
+		   	<tr>
+  	   		<td>Purchase Order No: </td>
+  	   		<td><input type="text" name="purchase"></td>
+  	   	</tr>
+  	   	<tr>
+  	   		<td>Dilivery Method: </td>
+  	   		<td>
+  	   		<input type="radio" name="estatus" value="ordinarypost" />Ordinary Post
+  	   		<input type="radio" name="estatus" value="speedpost" />Speed Post
+  	   	</td>
+  	   	</tr>
+  	   	<tr>
+  	   		<td>Payment Method: </td>
+  	   		<td>
+  	   			<select name="payment">
+  	   				<option>Enter payment method</option>
+  	   				<option>Cheque</option>
+  	   				<option>Cash</option>
+  	   				<option>Credit Card</option>
+  	   			</select>
+  	   		</td>
+  	   	
+  	   		
+  	   	</tr>
+  	   	<tr>
+  	   		<td>
+  	   			I agree to the terms and conditions
+  	   			<input type="checkbox" name="ig" />
+  	   		</td>
+  	   	</tr>
+  	   	<tr>
+  	   	    <td>
+  	   	    	<input type="submit" value="validate">
+  	   	    </td>
+        </tr>
   	   </table>
 
 
