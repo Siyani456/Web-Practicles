@@ -1,0 +1,68 @@
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+
+}
+nav{
+	width: 100%;
+	position: fixed;
+
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+    text-decoration: none;
+}
+.hme{
+	background-color: green;
+}
+li a:hover{
+	background-color: red;
+}
+img{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	margin-left: 40%;
+	margin-top: 20%;
+}
+section{
+	height: 100vh;
+	border: 1px solid black;
+
+}
+
+#About{
+	background-image: url(my9.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#Contact{
+	background-image: url(my3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#News{
+	background-image: url(my900.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#Profile{
+	background-image: url(my2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#Home{
+	background-image: url(my8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
